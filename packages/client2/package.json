@@ -1,0 +1,75 @@
+{
+  "name": "cra-ssr-code-splitting2",
+  "version": "0.1.0",
+  "private": false,
+  "homepage": "./",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.0",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.4.2",
+    "@lskjs/apiquery": "^0.32.0",
+    "@lskjs/autobind": "^0.32.0",
+    "@lskjs/db": "^0.32.0",
+    "@lskjs/general": "^0.15.305",
+    "@lskjs/i18": "^0.32.0",
+    "@lskjs/log": "^0.32.0",
+    "@lskjs/module": "^0.32.0",
+    "@lskjs/reactapp": "^0.32.0",
+    "@lskjs/scroll": "^0.30.1",
+    "@lskjs/server": "^0.32.0",
+    "@lskjs/uapp": "^0.32.0",
+    "@lskjs/utils": "^0.32.0",
+    "antd": "^3.15.2",
+    "babel-plugin-dynamic-import-node": "^2.0.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "emotion": "9.1.3",
+    "emotion-server": "9.1.3",
+    "express": "^4.16.2",
+    "file-loader": "^2.0.0",
+    "formik": "^1.5.1",
+    "fuse.js": "^3.4.4",
+    "ignore-styles": "^5.0.1",
+    "mobx": "^5.9.0",
+    "mobx-react": "^5.4.3",
+    "nodemon": "^1.18.10",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-loadable": "^5.3.1",
+    "react-modal": "^3.8.1",
+    "react-scripts": "^2.1.1",
+    "url-loader": "^1.0.1"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
+  },
+  "scripts": {
+    "dev": "npm run watch",
+    "build": "../../scripts/package-build.sh",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "postversion": "npm run release",
+    "lint:js": "../../scripts/package-lint-js.sh",
+    "bootstrap": "../../scripts/package-bootstrap.sh",
+    "watch": "../../scripts/package-watch.sh",
+    "link": "../../scripts/package-link.sh",
+    "bump": "../../scripts/package-bump.sh",
+    "release": "../../scripts/package-release.sh"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "husky": "^1.3.1",
+    "prettier": "^1.16.4",
+    "pretty-quick": "^1.10.0"
+  }
+}
