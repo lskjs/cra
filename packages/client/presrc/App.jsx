@@ -3,6 +3,10 @@ import logo from "./logo.svg";
 import "./App.css";
 
 class App extends Component {
+  componentDidMount() {
+    import(/* webpackChunkName: "page-1" */ './Page1');
+    import(/* webpackChunkName: "page-2" */ './Page2');
+  }
   render() {
     return (
       <div className="App">
