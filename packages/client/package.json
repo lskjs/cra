@@ -10,14 +10,14 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
-    "start": "SKIP_PREFLIGHT_CHECK=true  react-scripts start",
+    "start": "SKIP_PREFLIGHT_CHECK=true  rescripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "npm run watch",
     "postversion": "npm run release",
     "lint:js": "../../scripts/package-lint-js.sh",
     "bootstrap": "../../scripts/package-bootstrap.sh",
-    "build": "SRC=presrc DIST=src BUILD_PARAMS=--copy-files ../../scripts/package-build.sh && SKIP_PREFLIGHT_CHECK=true react-scripts build",
+    "build": "SRC=presrc DIST=src BUILD_PARAMS=--copy-files ../../scripts/package-build.sh && SKIP_PREFLIGHT_CHECK=true rescripts build",
     "watch": "SRC=presrc DIST=src BUILD_PARAMS=--copy-files ../../scripts/package-watch.sh",
     "link": "../../scripts/package-link.sh",
     "bump": "../../scripts/package-bump.sh",
@@ -33,6 +33,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@rescripts/cli": "0.0.10",
     "babel-cli": "^6.26.0"
   }
 }

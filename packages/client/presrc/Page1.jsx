@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Promise from 'bluebird';
+import groupBy from 'lodash/groupBy';
 
 class Page1 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      hello: 'world',
+      hello: 'world123',
     };
   }
   render() {
