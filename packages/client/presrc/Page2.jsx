@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import groupBy from 'lodash/groupBy';
+import Promise from 'bluebird';
 
 class Page2 extends Component {
   constructor(props) {
