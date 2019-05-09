@@ -10,6 +10,8 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "stats": "rm -rf stats && source-map-explorer --file='./stats/index.html' -m 'build/static/js/*.js'",
+    "unused": "depcheck --ignore src,build --ignores 'eslint*,depcheck,webpack,@babel/runtime,*babel*' || exit 0",
     "start": "SKIP_PREFLIGHT_CHECK=true  rescripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -34,6 +36,8 @@
   ],
   "devDependencies": {
     "@rescripts/cli": "0.0.10",
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "depcheck": "^0.8.0",
+    "source-map-explorer": "^2.0.0-beta.0"
   }
 }
